@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 * {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -48,28 +50,28 @@ html {
 }
 
 button {
-  height:60px;
+  height: 60px;
   background-color: #313131;
   border-radius: 20px;
   border: 1px solid black;
   font-size: 2rem;
-  color:white;
+  color: white;
 }
-button:hover{
+button:hover {
   background-color: gray;
 }
-.operator{
+.operator {
   background: #fe9501;
 }
-.operator:hover{
+.operator:hover {
   background-color: #ffd191;
 }
-.operator:focus{
+.operator:focus {
   background-color: white;
-  color:#fe9501;
+  color: #fe9501;
 }
 
-#plus{
+#plus {
   grid-row-start: 4;
   grid-column-start: 4;
 }
@@ -85,14 +87,14 @@ button:hover{
   grid-row-start: 1;
   grid-column-start: 4;
 }
-#equal-sign{
-  grid-row-start:5;
+#equal-sign {
+  grid-row-start: 5;
   grid-column-start: 4;
 }
 #wide {
   grid-row-start: 5;
-  grid-column-start:1 ;
-  grid-column-end:3;
+  grid-column-start: 1;
+  grid-column-end: 3;
   width: 100%;
 }
 #decimal {
@@ -103,7 +105,7 @@ button:hover{
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 4;
-  width:100%;
+  width: 100%;
 }
 .output .previous-operand {
   color: lightgray;

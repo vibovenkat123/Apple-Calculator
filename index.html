@@ -1,52 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-</head>
-<body>
-  <div class="calc">
-    <div class="output">
-      <div data-previous-op class="previous-operand">123+</div>
-      <div data-previous-op class="current-operand">456</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="calc">
+      <div class="output">
+        <div data-previous-op class="previous-operand">123+</div>
+        <div data-previous-op class="current-operand">456</div>
+      </div>
+
+      <div class="calc-keys">
+        <button
+          type="button"
+          class="operator"
+          value="+"
+          id="plus"
+          data-operation
+        >
+          +
+        </button>
+        <button
+          type="button"
+          class="operator"
+          value="-"
+          id="minus"
+          data-operation
+        >
+          -
+        </button>
+        <button
+          type="button"
+          class="operator"
+          value="*"
+          id="times"
+          data-operation
+        >
+          x
+        </button>
+        <button type="button" class="operator" value="/" id="by" data-operation>
+          ÷
+        </button>
+
+        <button class="btn" value="7" data-number>7</button>
+        <button class="btn" value="8" data-number>8</button>
+        <button class="btn" value="9" data-number>9</button>
+
+        <button class="btn" value="4" data-number>4</button>
+        <button class="btn" value="5" data-number>5</button>
+        <button class="btn" value="6" data-number>6</button>
+
+        <button class="btn" value="1" data-number>1</button>
+        <button class="btn" value="2" data-number>2</button>
+        <button class="btn" value="3" data-number>3</button>
+
+        <button class="btn" id="wide" value="0">0</button>
+        <button class="btn" id="decimal" value="." data-number>.</button>
+        <button class="btn" id="all-clear" value="all-clear" data-clear>
+          AC
+        </button>
+
+        <button
+          type="button"
+          id="equal-sign"
+          value="="
+          class="operator"
+          data-equals
+        >
+          =
+        </button>
+      </div>
     </div>
-    
-  
-    <div class="calc-keys">
-  
-      
-      <button type = 'button' class="operator" value="+" id = 'plus' data-operation>+</button>
-      <button type = 'button' class="operator" value="-" id = 'minus'data-operation>-</button>
-      <button type = 'button' class="operator" value="*" id = 'times'data-operation>x</button>
-      <button type = 'button' class="operator" value="/" id = 'by'data-operation>÷</button>
-  
-  
-      <button class = 'btn' value="7"data-number>7</button>
-      <button class = 'btn' value="8"data-number>8</button>
-      <button class = 'btn' value="9"data-number>9</button>
-  
-  
-      <button class = 'btn' value="4"data-number>4</button>
-      <button class = 'btn' value="5"data-number>5</button>
-      <button class = 'btn' value="6"data-number>6</button>
-  
-  
-      <button class = 'btn' value="1"data-number>1</button>
-      <button class = 'btn' value="2"data-number>2</button>
-      <button class = 'btn' value="3"data-number>3</button>
-  
-  
-      <button class = 'btn' id = 'wide' value="0">0</button>
-      <button class = 'btn' id="decimal" value="." data-number>.</button>
-      <button class = 'btn' id="all-clear" value="all-clear" data-clear>AC</button>
-  
-      <button type = 'button'  id="equal-sign" value="=" class = 'operator' data-equals>=</button>
-  
-    </div>
-  </div>
-</body>
+  </body>
 </html>
