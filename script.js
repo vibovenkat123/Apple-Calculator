@@ -1,5 +1,9 @@
 const numberBtn = document.querySelectorAll['[data-number]']
 const operatorBtn = document.querySelectorAll['[data-operator]']
+const equalsBtn = document.querySelector['[data-equals]']
+const clearBtn = document.querySelector['[data-clear]']
+const previousOperand = document.querySelector['[data-previous-op]']
+const currentOperand = document.querySelector['[data-current-op]']
 const display = document.getElementsByClassName
 const add = (num1, num2) => {return num1+num2};
 const subtract = (num1, num2) => {return num1 - num2};
