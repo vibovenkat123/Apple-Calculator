@@ -15,7 +15,7 @@ const operate = (operator, num1, num2) =>{
       }
     case '-':
       return subtract(num1, num2);
-    case 'x':
+    case '*':
       return multiply(num1, num2);
   }
 }
