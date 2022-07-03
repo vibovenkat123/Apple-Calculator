@@ -5,17 +5,13 @@ const operand = document.getElementById("operand");
 const digits = document.querySelectorAll(".number");
 let sign = '';
 const operator = document.querySelectorAll(".operator");
-console.table(digits);
 let firstNumber = "";
 let secondNumber = "";
 let clearScreen = false;
 const operate = () => {
   bothNumbers = [Number(firstNumber), Number(secondNumber)];
-  console.log(bothNumbers)
-  console.log(sign);
   switch (sign) {
     case "+":
-      console.log('yo')
       let sum = bothNumbers.reduce((previous, current) => {
         return current+previous;
       }, )
@@ -41,7 +37,6 @@ const operate = () => {
       }
 
     case "-":
-      console.log('hi')
       let difference = bothNumbers.reduce((previous, current) => {
         return previous-current;
       })
@@ -55,7 +50,6 @@ const operate = () => {
       let product = bothNumbers.reduce((previous, current) => {
         return current*previous;
       })
-      console.log(product)
       firstNumber = product;
       secondNumber = "";
       operand.innerText = product;
@@ -70,7 +64,6 @@ digits.forEach((digit) => {
   digit.addEventListener("click", () => {
     
     if (sign == "") {
-      console.log(clearScreen)
       if (clearScreen){
         clearScreen = false;
         operand.textContent = '';
@@ -122,7 +115,6 @@ operator.forEach(operators => {
           operate();
           clearScreen = true;
           sign = (operators.innerText);
-          console.log(operand);
       }
       else {
         operand.textContent = '';
