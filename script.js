@@ -22,19 +22,17 @@ const operate = () => {
       clearScreen = true;
       break;
     case "÷":
-      if (secondNumber == 0) {
-        operand.innerText = "ERROR";
-      } else {
-        let quotient = bothNumbers.reduce((previous, current) => {
-          return previous / current;
-        });
-        firstNumber = quotient;
-        secondNumber = "";
-        operand.innerText = quotient;
-        bothNumbers = [];
-        clearScreen = true;
-        break;
-      }
+      
+      let quotient = bothNumbers.reduce((previous, current) => {
+      return previous / current;
+      });
+      firstNumber = quotient;
+      secondNumber = "";
+      operand.innerText = quotient;
+      bothNumbers = [];
+      clearScreen = true;
+      break;
+      
 
     case "-":
       let difference = bothNumbers.reduce((previous, current) => {
