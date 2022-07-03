@@ -15,11 +15,11 @@ html {
 }
 
 .calc {
-  height: 100vh;
+  height: 150vh;
   background: black;
   border-radius: 5px;
   position: absolute;
-  top: -50%;
+  top: -75%;
   left: 50%;
   transform: translate(-50%, 50%);
   width: 100vw;
@@ -46,7 +46,7 @@ html {
   grid-gap: 20px;
   padding: 20px;
   height:80vh;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 button {
