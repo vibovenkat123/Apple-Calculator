@@ -57,16 +57,10 @@ button {
   font-size: 2rem;
   color: white;
 }
-button:hover {
-  background-color: gray;
-}
 .operator {
   background: #fe9501;
 }
 .operator:hover {
-  background-color: #ffd191;
-}
-.operator:focus {
   background-color: white;
   color: #fe9501;
 }
@@ -115,10 +109,8 @@ button:hover {
 .output .current-operand {
   color: white;
 }
+
 #equal-sign:hover {
-  background-color: #ffd191;
-}
-#equal-sign:focus {
   background-color: white;
   color: #fe9501;
 }
