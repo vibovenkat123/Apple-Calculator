@@ -10,9 +10,8 @@
   </head>
   <body>
     <div class="calc">
-      <div class="output">
-        <div data-previous-op class="previous-operand">123+</div>
-        <div data-previous-op class="current-operand">456</div>
+      <div id="output">
+        <div id="operand">5</div>
       </div>
 
       <div class="calc-keys">
@@ -47,23 +46,21 @@
           ÷
         </button>
 
-        <button class="btn" value="7" data-number>7</button>
-        <button class="btn" value="8" data-number>8</button>
-        <button class="btn" value="9" data-number>9</button>
+        <button value="7" class="number">7</button>
+        <button value="8" class="number">8</button>
+        <button value="9" class="number">9</button>
 
-        <button class="btn" value="4" data-number>4</button>
-        <button class="btn" value="5" data-number>5</button>
-        <button class="btn" value="6" data-number>6</button>
+        <button value="4" class="number">4</button>
+        <button value="5" class="number">5</button>
+        <button value="6" class="number">6</button>
 
-        <button class="btn" value="1" data-number>1</button>
-        <button class="btn" value="2" data-number>2</button>
-        <button class="btn" value="3" data-number>3</button>
+        <button value="1" class="number">1</button>
+        <button value="2" class="number">2</button>
+        <button value="3" class="number">3</button>
 
-        <button class="btn" id="wide" value="0">0</button>
-        <button class="btn" id="decimal" value="." data-number>.</button>
-        <button class="btn" id="all-clear" value="all-clear" data-clear>
-          AC
-        </button>
+        <button id="wide" value="0">0</button>
+        <button id="decimal" value="." class="number">.</button>
+        <button id="all-clear" value="all-clear" data-clear>AC</button>
 
         <button
           type="button"
