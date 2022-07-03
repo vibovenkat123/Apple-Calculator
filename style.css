@@ -93,7 +93,7 @@ button:hover {
 #wide {
   grid-row-start: 5;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   width: 100%;
 }
 #decimal {
