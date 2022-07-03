@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./mobile.css" />
+    <script src="./mobile_script.js" defer></script>
+  </head>
+  <body>
+    <div class="calc">
+      <div id="output">
+        <div id="operand"></div>
+      </div>
+      <div class="calc-keys">
+        <button
+          type="button"
+          class="operator"
+          value="+"
+          id="plus"
+          data-operation
+        >
+          +
+        </button>
+        <button
+          type="button"
+          class="operator"
+          value="-"
+          id="minus"
+          data-operation
+        >
+          -
+        </button>
+        <button
+          type="button"
+          class="operator"
+          value="*"
+          id="times"
+          data-operation
+        >
+          x
+        </button>
+        <button type="button" class="operator" value="/" id="by" data-operation>
+          ÷
+        </button>
+
+        <button value="7" class="number">7</button>
+        <button value="8" class="number">8</button>
+        <button value="9" class="number">9</button>
+
+        <button value="4" class="number">4</button>
+        <button value="5" class="number">5</button>
+        <button value="6" class="number">6</button>
+
+        <button value="1" class="number">1</button>
+        <button value="2" class="number">2</button>
+        <button value="3" class="number">3</button>
+
+        <button id="wide" value="0" class="number">0</button>
+        <button id="decimal" value="." class="number">.</button>
+        <button id="all-clear" value="all-clear" data-clear>AC</button>
+
+        <button type="button" id="equal-sign" value="=" data-equals>=</button>
+      </div>
+    </div>
+  </body>
+</html>
