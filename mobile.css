@@ -15,14 +15,14 @@ html {
 }
 
 .calc {
-  border: 10px solid gray;
+  height: 100vh;
   background: black;
   border-radius: 5px;
   position: absolute;
-  top: -20%;
+  top: -50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  width: 400px;
+  width: 100vw;
 }
 
 #output {
@@ -33,7 +33,7 @@ html {
   background-color: #000;
   color: #fff;
   text-align: right;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-right: 20px;
   padding-left: 10px;
   word-wrap: break-word;
@@ -45,6 +45,8 @@ html {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   padding: 20px;
+  height:80vh;
+  padding-top: 200px;
 }
 
 button {
