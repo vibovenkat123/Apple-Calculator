@@ -18,11 +18,11 @@ html {
   height: 150vh;
   background: black;
   border-radius: 5px;
+  width: 100vw;
   position: absolute;
   top: -78%;
   left: 50%;
   transform: translate(-50%, 50%);
-  width: 100vw;
 }
 
 #output {
@@ -45,8 +45,10 @@ html {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   padding: 20px;
-  height:80vh;
+  width: 90%;
+  align-items: center;
   padding-top: 150px;
+  padding-left: 40px;
 }
 
 button {
